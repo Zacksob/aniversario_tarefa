@@ -1,0 +1,33 @@
+.infos__bar {
+    display: flex;
+    align-items: center;
+    padding: 15px 24px;
+    justify-content: space-between;
+
+
+
+    &__elements {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        font-size: 40px;
+
+        @media (max-width: 640px) {
+            display: block;
+
+            &__infos {
+                display: block;
+
+                &__elements {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+
+        @media (max-width: 1024px) {
+            &__infos {
+                gap: 16px;
+            }
+        }
+    }
+}
